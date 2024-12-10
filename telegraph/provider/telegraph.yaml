@@ -1,0 +1,34 @@
+identity:
+  author: alterxyz
+  name: telegraph
+  label:
+    en_US: Telegraph
+    zh_Hans: Telegraph
+    pt_BR: Telegraph
+  description:
+    en_US: a simple telegraph plugin that allow you publish your content easily
+    zh_Hans: a simple telegraph plugin that allow you publish your content easily
+    pt_BR: a simple telegraph plugin that allow you publish your content easily
+  icon: icon.svg
+credentials_for_provider:
+  telegraph_access_token:
+    type: secret-input
+    required: true
+    label:
+      en_US: Telegraph Access Token
+      zh_Hans: Telegraph Access Token
+      pt_BR: Telegraph Access Token
+    placeholder:
+      en_US: Please input your Telegraph Access Token
+      zh_Hans: 请输入你的 Telegraph Access Token
+      pt_BR: Please input your Telegraph Access Token
+    help:
+      en_US: Get your Access Token from Telegraph
+      zh_Hans: 从 Telegraph 获取您的 Access Token
+      pt_BR: Get your Access Token from Telegraph
+    url: https://telegra.ph/api#createAccount
+tools:
+  - tools/telegraph.yaml
+extra:
+  python:
+    source: provider/telegraph.py

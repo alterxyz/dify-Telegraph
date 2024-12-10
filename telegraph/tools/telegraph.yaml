@@ -1,0 +1,55 @@
+identity:
+  name: telegraph
+  author: alterxyz
+  label:
+    en_US: Telegraph
+    zh_Hans: Telegraph
+    pt_BR: Telegraph
+description:
+  human:
+    en_US: A simple telegraph plugin that allow you publish your content easily
+    zh_Hans: 一个简单的 telegraph 插件，可以让您轻松发布内容
+    pt_BR: Um plugin telegraph simples que permite publicar seu conteúdo facilmente
+  llm: A simple telegraph plugin that allow you publish your content easily, your content will be published to telegraph, the format of the content you providing should be in markdown.
+parameters:
+  - name: p_title
+    type: string
+    required: true
+    label:
+      en_US: Post title
+      zh_Hans: 文章标题
+      pt_BR: Título do post
+    human_description:
+      en_US: The title of the post
+      zh_Hans: 文章标题
+      pt_BR: O título do post
+    llm_description: The title of the post, should be pure plain text, short and meaningful.
+    form: llm
+  - name: p_content
+    type: string
+    required: true
+    label:
+      en_US: Post content
+      zh_Hans: 文章内容
+      pt_BR: Conteúdo do post
+    human_description:
+      en_US: The content of the post
+      zh_Hans: 文章内容
+      pt_BR: O conteúdo do post
+    llm_description: The content of the post, should be in markdown format.
+    form: llm
+  - name: a_telegraph_access_token
+    type: string
+    required: false
+    label:
+      en_US: Alternative Telegraph Access Token
+      zh_Hans: 替代 Telegraph Access Token
+      pt_BR: Token de acesso alternativo do Telegraph
+    human_description:
+      en_US: The Telegraph Access Token for temporary replacement, this article will use this account (Token) instead of the default account for publication
+      zh_Hans: 用于临时替代的 Telegraph Access Token, 这个文章将会使用这个账号 (Token) 而不是默认的账号进行发布
+      pt_BR: O Token de acesso do Telegraph para substituição temporária, este artigo usará esta conta (Token) em vez da conta padrão para publicação
+    form: form
+extra:
+  python:
+    source: tools/telegraph.py
