@@ -38,18 +38,6 @@ parameters:
       pt_BR: O conteúdo do post
     llm_description: The content of the post, should be in markdown format.
     form: llm
-  - name: a_telegraph_access_token
-    type: string
-    required: false
-    label:
-      en_US: Alternative Telegraph Access Token
-      zh_Hans: 替代 Telegraph Access Token
-      pt_BR: Token de acesso alternativo do Telegraph
-    human_description:
-      en_US: The Telegraph Access Token for temporary replacement, this article will use this account (Token) instead of the default account for publication
-      zh_Hans: 用于临时替代的 Telegraph Access Token, 这个文章将会使用这个账号 (Token) 而不是默认的账号进行发布
-      pt_BR: O Token de acesso do Telegraph para substituição temporária, este artigo usará esta conta (Token) em vez da conta padrão para publicação
-    form: form
 extra:
   python:
     source: tools/telegraph.py

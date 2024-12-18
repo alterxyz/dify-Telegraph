@@ -1,18 +1,18 @@
-version: 0.0.1
+version: 0.0.2
 type: plugin
 author: alterxyz
 name: telegraph
 label:
-  en_US: telegraph
-  ja_JP: telegraph
-  zh_Hans: telegraph
-  pt_BR: telegraph
+  en_US: Telegraph
+  ja_JP: Telegraph
+  zh_Hans: Telegraph
+  pt_BR: Telegraph
 description:
-  en_US: a simple telegraph plugin that allow you publish your content easily
-  ja_JP: a simple telegraph plugin that allow you publish your content easily
-  zh_Hans: a simple telegraph plugin that allow you publish your content easily
-  pt_BR: a simple telegraph plugin that allow you publish your content easily
-icon: icon.svg
+  en_US: A Telegraph plugin that allow you publish your content easily
+  ja_JP: コンテンツを簡単に公開できるTelegraphプラグイン
+  zh_Hans: 一个让您轻松发布内容的Telegraph插件
+  pt_BR: Um plugin do Telegraph que permite publicar seu conteúdo facilmente
+icon: icon.jpg
 resource:
   memory: 268435456
   permission:
@@ -25,7 +25,7 @@ plugins:
   tools:
     - provider/telegraph.yaml
 meta:
-  version: 0.0.1
+  version: 0.0.2
   arch:
     - amd64
     - arm64
